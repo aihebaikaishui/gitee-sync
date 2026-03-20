@@ -27,3 +27,16 @@ repositories:
   # 可以继续添加更多仓库配置...
   # 复制上面的配置块，修改相应的值即可
   # 注意保持正确的 YAML 缩进 
+  - name: "a_stock_monitor-sync"  # 示例：同步一个主分支的项目
+    gitee:
+      # Gitee 仓库完整地址
+      repo_url: "https://gitee.com/xiaoheaicoding/a_stock_monitor.git"
+      # 要同步的源分支
+      branch: "main"
+    github:
+      # GitHub 目标仓库名称
+      repo_name: "a_stock_monitor"
+      # GitHub 目标分支名称（可选，默认与 Gitee 分支相同）
+      branch: "main"
+      # 是否为私有仓库
+      private: false
